@@ -1,0 +1,36 @@
+.btn-hover {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    background-color: cornflowerblue;
+}
+
+.primer-letra::first-letter {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}
+
+.decorado::before {
+    content: "★ ";
+    color: gold;
+}
+
+.input-foco {
+    padding: 8px;
+    border: 2px solid gray;
+}
+
+.input-foco:focus {
+    border-color: green;
+    outline: none;
+}
+
+.lista li:first-child {
+    font-weight: bold;
+    color: blue;
+}
