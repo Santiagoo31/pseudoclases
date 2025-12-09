@@ -11,13 +11,12 @@
 
 .primer-letra::first-letter {
     font-size: 2rem;
-    color: red;
+    color:violet;
     font-weight: bold;
 }
 
 .decorado::before {
-    content: "★ ";
-    color: gold;
+    content: "👀 ";
 }
 
 .input-foco {
