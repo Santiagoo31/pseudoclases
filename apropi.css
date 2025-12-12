@@ -1,0 +1,134 @@
+.boton:hover {
+    background-color: rgba(255, 0, 0, 0.894);
+    border: 10px 10px solid rgb(0, 255, 64);;
+    font-size: large;
+}
+
+.boton_2:focus {
+    background-color: rgb(228, 238, 43);
+    border: 10px solid rgb(20, 12, 242);  
+    font-size: large;
+}
+
+.boton_3:active {
+    background-color: rgb(255, 0, 234);
+    border: 5px solid rgb(13, 12, 40);
+    font-size: large;
+}
+
+li:first-child {
+    background-color: rgb(255, 238, 0);
+    font-size: large;
+    display: inline-block;
+}
+
+li:last-child {
+    border: 5px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 179);
+    display: inline-block;
+}
+
+li:nth-child(3) {
+    background-color: rgb(0, 0, 255);
+}
+
+.parrafo::first-letter{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    font-family:cursive;
+}
+.parrafo:first-line{
+    font-size: 18px;
+    color: rgb(0, 255, 221);
+    font-family: fantasy;
+} 
+.bx:before {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.title:before {
+    content: "🔥 ";
+}
+.title::after {
+    content: " 🔥";
+}
+
+.card {
+  width: 320px;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  margin: 20px auto;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #6e8efb, #a777e3);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.card::after {
+  content: '✦';
+  position: absolute;
+  font-size: 60px;
+  color: rgba(255, 0, 0, 0.1);
+  top: -20px;
+  right: -20px;
+  transition: transform 0.6s ease;
+}
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.card-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+.card-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #6e8efb;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0,0,0.15);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:hover::after {
+  transform: rotate(180deg) scale(1.3);
+}
+
+.card-button:hover {
+  background: #5a78e0;
+}
+
+.card-button:focus {
+  outline: 3px solid #a777e3;
+  outline-offset: 4px;
+}
+.card-button:active {
+  transform: scale(0.98);
+}

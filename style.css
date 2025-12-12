@@ -1,18 +1,18 @@
-.btn-hover {
+.btn {
     background-color: lightblue;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
-.btn-hover:hover {
-    background-color: cornflowerblue;
+.btn:hover {
+  cursor: grabbing;
+    background-color: rgb(90, 160, 229);
 }
 
 .primer-letra::first-letter {
     font-size: 2rem;
     color:violet;
-    font-weight: bold;
 }
 
 .decorado::before {
@@ -25,7 +25,7 @@
 }
 
 .input-foco:focus {
-    border-color: green;
+    border-color: rgb(255, 0, 0);
     outline: none;
 }
 
